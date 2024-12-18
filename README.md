@@ -24,11 +24,11 @@ The `resource_main` field is interpreted differently based on the value of the `
 
 - **`youtube`**: Contains the identifier of a YouTube channel.  
     - Usage: If the field contains `UCKt4TYGQihKkrfLokfgWilg`, the channel can be accessed at: 
-  `www.youtube.com/channel/UCKt4TYGQihKkrfLokfgWilg`
+  www.youtube.com/channel/UCKt4TYGQihKkrfLokfgWilg
   
 - **`reddit`**: Contains the identifier of a subreddit.  
   - Usage: If the field contains `UFOs`, the subreddit can be accessed at: 
-  `www.reddit.com/r/UFOs`
+  www.reddit.com/r/UFOs
   
 - **`8kun`**: Contains the identifier of an 8kun board.  
   - Usage: If the field contains `qresearch`, the board can be accessed at:
@@ -36,12 +36,12 @@ The `resource_main` field is interpreted differently based on the value of the `
   
 - **`voat`**: Contains the identifier of a Voat subverse.  
   - Usage: If the field contains `GreatAwakening`, the subverse can be accessed at: 
-  `www.voat.co/v/GreatAwakening` 
+  www.voat.co/v/GreatAwakening 
   *(Note: Voat is currently shut down.)*
   
 - **`web`**: Contains the URL of a website.  
   - Usage: If the field contains `zerohedge.com`, the resource refers to the website: 
-  `www.zerohedge.com`
+  www.zerohedge.com
 
 The scientific work we analyzed contained only a list of conspiracy-related YouTube channels. We enriched this data by extracting the identifiers of all videos shared within these channels.
 The `resource_supplementary` field contains the identifiers of these YouTube videos. In this case, if the field contains the id: `j5T9xmWalGg`, the video can be accessed at: www.youtube.com/watch?v=j5T9xmWalGg
