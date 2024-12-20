@@ -4,7 +4,15 @@ This repository provides two datasets used in the USENIX Security 2025 paper:
 
 **[The Conspiracy Money Machine: Uncovering Telegram's Conspiracy Channels and their Profit Model](https://arxiv.org/abs/2310.15977)**
 
-Below, we detail the structure of each dataset. For additional information on data collection and analysis, please refer to *Section 4.1* of the manuscript.
+If you use this dataset, or the findings from the paper, please cite:
+
+```
+@inproceedings{imperati2025conspiracy,
+  title={The Conspiracy Money Machine: Uncovering Telegram's Conspiracy Channels and their Profit Model},
+  author={Imperati, Vincenzo and La Morgia, Massimo and Mei, Alessandro and Mongardini, Alberto Maria and Sassi, Francesco},
+  booktitle={34th USENIX Security Symposium (USENIX Security 25)},
+  year={2025}
+}
 
 ---
 
