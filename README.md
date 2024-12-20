@@ -76,7 +76,7 @@ At the end of this process, we identified a dataset of URLs that directly refere
 The dataset is contained in the ```conspiracy_url_dataset.csv``` file and contains three columns:
 
 - **`URL`**: Indicates an URL extracted from a Telegram Channel  
-- **`resource_main`**: Contains the  resource used to perform the match.  
+- **`resource`**: Contains the  resource used to perform the match.  
 - **`platform`**: Specifies the platform targeted by the resource.  
 
 #### Notes on Data Extraction
