@@ -44,6 +44,7 @@ www.zerohedge.com
 
 The scientific work we analyzed contained only a list of conspiracy-related YouTube channels. We enriched this data by extracting the identifiers of all videos shared within these channels.
 The `resource_supplementary` field contains the identifiers of these YouTube videos. In this case, if the field contains the id: `j5T9xmWalGg`, the video can be accessed at: www.youtube.com/watch?v=j5T9xmWalGg
+
 ---
 ## Conspiracy URL Dataset
 This dataset contains URLs shared within the channels included in **TGDataset**, the largest publicly available collection of Telegram channels.
