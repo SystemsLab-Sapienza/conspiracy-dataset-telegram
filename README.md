@@ -20,7 +20,7 @@ If you use this dataset, or the findings from the paper, please cite:
 ## Conspiracy Resource Dataset
 The dataset is included in two files.
 The `conspiracy_resource_dataset.csv` file contains the resources collected and their source. 
-The `conspiracy_resource_dataset_supplementary.csv` contains the identifiers of all videos shared within conspiracy-related YouTube channels. 
+The `conspiracy_resource_dataset_supplementary.csv` file contains the identifiers of all videos shared within conspiracy-related YouTube channels. 
 Indeed data we extracted from the sources consisted only of YouTube channel identifiers. We enhanced this dataset by extracting the IDs of all videos shared within these channels.
 
 The `conspiracy_resource_dataset.csv` contains the following columns:
@@ -54,7 +54,7 @@ The `resource` field is interpreted differently based on the value of the `platf
   - Usage: If the field contains `zerohedge.com`, the resource refers to the website: 
 www.zerohedge.com
 
-The `conspiracy_resource_dataset_supplementary.csv` field contains two columns:
+The `conspiracy_resource_dataset_supplementary.csv` file contains two columns:
 - **`youtube_channel`**: Contains the identifier of a YouTube channel.
 - **`youtube_video`**: Contains the identifier of a YouTube video we extracted from the corresponding Youtube channel.  
     - Usage:if the field contains the id: `j5T9xmWalGg`, the video can be accessed at: www.youtube.com/watch?v=j5T9xmWalGg
