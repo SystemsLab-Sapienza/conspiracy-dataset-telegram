@@ -19,14 +19,15 @@ If you use this dataset, or the findings from the paper, please cite:
 
 ## Conspiracy Resource Dataset
 This dataset is a collection of conspiracy-related resources extracted from an extensive review of the scientific works
-about conspiracy theories.
+about conspiracy theories. More details are reported in *Sec. 3* and *Sec. 4.1.1* of the manuscript.
 
 The dataset is included in the `conspiracy_resource_dataset.csv` file, which contains the following columns:
 
-- **`source`**: Indicates the scientific paper or repository from which the resource was collected.  
-- **`platform`**: Specifies the platform targeted by the resource.  
-- **`resource_main`**: Contains the main resource collected.  
+- **`resource_main`**: Contains the resource collected.  
 - **`resource_supplementary`**: (Optional) Provides additional data we extracted starting from the main resources.
+- **`platform`**: Specifies the platform targeted by the resource.  
+- **`source_0`,`source_1`,`source_2`**: Each column contains a reference to the scientific paper or repository from which the resource was collected. 
+Multiple columns are used because a resource can be mentioned in more than one scientific paper or repository. 
 
 
 The `resource_main` field is interpreted differently based on the value of the `platform` field:
@@ -45,7 +46,7 @@ The `resource_main` field is interpreted differently based on the value of the `
 - **`voat`**: Contains the identifier of a Voat subverse.  
   - Usage: If the field contains `GreatAwakening`, the subverse can be accessed at: 
    www.voat.co/v/GreatAwakening 
-  *(Note: Voat is currently shut down.)*
+  *(Note: Voat is currently shut down and can only be accessed through an archive:* https://searchvoat.co/v/*)*
   
 - **`web`**: Contains the URL of a website.  
   - Usage: If the field contains `zerohedge.com`, the resource refers to the website: 
@@ -74,7 +75,9 @@ The dataset is contained in the ```conspiracy_url_dataset.csv``` file and contai
 - **`platform`**: Specifies the platform targeted by the resource.  
 
 #### Notes on Data Extraction
-We explored alternative platforms hosting YouTube videos that preserve their original identifiers (video and channel IDs). 
+ **Youtube** : We explored alternative platforms hosting YouTube videos that preserve their original identifiers (video and channel IDs). 
 Specifically, we included URLs pointing to YouTube videos accessed through alternative frontends like [Invidious](https://invidious.io/) or [altCensored](https://altcensored.com/). 
 Additionally, we considered matches found on platforms such as [Odysee](https://odysee.com/) and [Rumble](https://rumble.com/), which enable content creators to migrate videos directly from YouTube. 
 Indeed, also in these cases, the migrated videos and channels retain their original YouTube identifiers.
+
+**Voat**: Voat was shut down on December 25, 2020. Since then, the platform's content has been accessible only through an archive: http://searchvoat.co. For this reason, when searching for URLs matching Voat subverses, we consider both www.voat.co/v/ and https://searchvoat.co/v/.
