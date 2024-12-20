@@ -44,7 +44,27 @@ www.zerohedge.com
 
 The scientific work we analyzed contained only a list of conspiracy-related YouTube channels. We enriched this data by extracting the identifiers of all videos shared within these channels.
 The `resource_supplementary` field contains the identifiers of these YouTube videos. In this case, if the field contains the id: `j5T9xmWalGg`, the video can be accessed at: www.youtube.com/watch?v=j5T9xmWalGg
-
+---
 ## Conspiracy URL Dataset
+This dataset contains URLs shared within the channels included in **TGDataset**, the largest publicly available collection of Telegram channels.
 
-The dataset is contained in the ```conspiracy_url_dataset.csv``` file.
+To extract the URLs, we follow the above process, explained in detail in *Sec. 4.2* of the manuscript:
+
+1. We collected all messages from Telegram channels included in the TGDataset.
+
+2. We identified URLs shared in the collected messages and resolved any shortened URLs to their full form.
+
+3. The extracted URLs were matched with resources in the **Conspiracy Resource Dataset**.  
+
+At the end of this process, we identified a dataset of URLs that directly reference conspiracy resources and are actively shared on Telegram.
+The dataset is contained in the ```conspiracy_url_dataset.csv``` file and contains three columns:
+
+- **`URL`**: Indicates an URL extracted from a Telegram Channel  
+- **`resource_main`**: Contains the  resource used to perform the match.  
+- **`platform`**: Specifies the platform targeted by the resource.  
+
+#### Notes on Data Extraction
+We explored alternative platforms hosting YouTube videos that preserve their original identifiers (video and channel IDs). 
+Specifically, we included URLs pointing to YouTube videos accessed through alternative frontends like [Invidious](https://invidious.io/) or [altCensored](https://altcensored.com/). 
+Additionally, we considered matches found on platforms such as [Odysee](https://odysee.com/) and [Rumble](https://rumble.com/), which enable content creators to migrate videos directly from YouTube. 
+Indeed, also in these cases, the migrated videos and channels retain their original YouTube identifiers.
