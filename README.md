@@ -57,7 +57,7 @@ The `resource_supplementary` field contains the identifiers of these YouTube vid
 
 ---
 ## Conspiracy URL Dataset
-This dataset contains URLs shared within the channels included in **TGDataset**, the largest publicly available collection of Telegram channels.
+This dataset contains URLs shared within the channels included in [TGDataset](https://zenodo.org/records/7640712), the largest publicly available collection of Telegram channels.
 
 To extract the URLs, we follow the above process, explained in detail in *Sec. 4.2* of the manuscript:
 
