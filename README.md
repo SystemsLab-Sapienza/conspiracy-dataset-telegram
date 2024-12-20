@@ -18,19 +18,21 @@ If you use this dataset, or the findings from the paper, please cite:
 ---
 
 ## Conspiracy Resource Dataset
-This dataset is a collection of conspiracy-related resources extracted from an extensive review of the scientific works
-about conspiracy theories. More details are reported in *Sec. 3* and *Sec. 4.1.1* of the manuscript.
+The dataset is included in two files.
+The `conspiracy_resource_dataset.csv` file contains the resources collected and their source. 
+The `conspiracy_resource_dataset_supplementary.csv` contains the identifiers of all videos shared within conspiracy-related YouTube channels. 
+Indeed data we extracted from the sources consisted only of YouTube channel identifiers. We enhanced this dataset by extracting the IDs of all videos shared within these channels.
 
-The dataset is included in the `conspiracy_resource_dataset.csv` file, which contains the following columns:
+The `conspiracy_resource_dataset.csv` contains the following columns:
 
-- **`resource_main`**: Contains the resource collected.  
-- **`resource_supplementary`**: (Optional) Provides additional data we extracted starting from the main resources.
+- **`resource`**: Contains the resource collected.
 - **`platform`**: Specifies the platform targeted by the resource.  
 - **`source_0`,`source_1`,`source_2`**: Each column contains a reference to the scientific paper or repository from which the resource was collected. 
 Multiple columns are used because a resource can be mentioned in more than one scientific paper or repository. 
 
+  
+The `resource` field is interpreted differently based on the value of the `platform` field:
 
-The `resource_main` field is interpreted differently based on the value of the `platform` field:
 
 - **`youtube`**: Contains the identifier of a YouTube channel.  
     - Usage: If the field contains `UCKt4TYGQihKkrfLokfgWilg`, the channel can be accessed at: 
@@ -52,8 +54,11 @@ The `resource_main` field is interpreted differently based on the value of the `
   - Usage: If the field contains `zerohedge.com`, the resource refers to the website: 
 www.zerohedge.com
 
-The scientific work we analyzed contained only a list of conspiracy-related YouTube channels. We enriched this data by extracting the identifiers of all videos shared within these channels.
-The `resource_supplementary` field contains the identifiers of these YouTube videos. In this case, if the field contains the id: `j5T9xmWalGg`, the video can be accessed at: www.youtube.com/watch?v=j5T9xmWalGg
+The `conspiracy_resource_dataset_supplementary.csv` field contains two columns:
+- **`youtube_channel`**: Contains the identifier of a YouTube channel.
+- **`youtube_video`**: Contains the identifier of a YouTube video we extracted from the corresponding Youtube channel.  
+    - Usage:if the field contains the id: `j5T9xmWalGg`, the video can be accessed at: www.youtube.com/watch?v=j5T9xmWalGg
+
 
 ---
 ## Conspiracy URL Dataset
